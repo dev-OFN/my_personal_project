@@ -5,84 +5,344 @@ body {
 	margin: 0;
 }
 
+img {
+	max-width: 100%;
+}
+
 .container {
-	border: 1px solid goldenrod;
+	border: 1px solid rgb(225, 186, 85);
 }
 
 .header {
-	background-color: #13005a;
+	background-color: #012b55;
 	height: 9rem;
+	display: flex;
+	align-items: center;
 }
 
 .search {
-	width: 40rem;
-	border-radius: 2rem;
-	border-color: greenyellow;
-	height: 3rem;
-	padding-bottom: 2rem;
-	position: relative;
-	bottom: 4rem;
+	width: 400rem;
+	border-radius: 1.5rem;
+	border-color: #bfff00;
+	padding: 0.9rem;
+	color: #616161;
 }
 
 .logo {
 	padding: 2rem;
 }
 
-h5 {
+.srch {
+	color: #ffffff;
+	background-color: #82cd11;
+	border: 19rem;
+	border-radius: 50%;
+	width: 2.5rem;
+	height: 2.5rem;
+	font-size: 1.1rem;
 	position: relative;
-	bottom: 4rem;
-	left: 72%;
-	color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+	right: 2.8rem;
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	/* line-height: 2.5rem; */
+	/* vertical-align: middle; */
+	/* display: inline-block; */
 }
 
-h4 {
+.srch:hover {
+	background: #67b51a;
+	transition: background 0.2s;
+}
+
+.phone-flip {
+	font-size: 1.7rem;
 	position: relative;
-	bottom: 6.5rem;
-	left: 82%;
+	top: 3rem;
+	color: #ffffff;
+}
+
+.phone-number {
 	color: #fff;
-	font-family: Arial, Helvetica, sans-serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
+	padding-top: 6rem;
+	padding-right: 1rem;
+	font-size: 1.5rem;
+}
+
+.email-1 {
+	color: #fff;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.3rem;
+	padding-top: 6rem;
+	padding-right: 1rem;
+}
+
+.envelope {
+	color: #ffffff;
+	position: relative;
+	top: 3rem;
+	font-size: 1.7rem;
 }
 
 .dropdowns {
 	display: flex;
-	color: #13005a;
+	color: #012b55;
 	justify-content: space-around;
-	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	font-family: Georgia, "Times New Roman", Times, serif;
 	font-weight: bold;
-	text-decoration: dashed darkblue 1px;
+	position: sticky;
+	top: 0.1px;
+	background: #ffffff;
 }
 
 .dropdowns p:hover {
-	color: greenyellow;
-	transition: 0.1s;
+	color: rgb(151, 221, 48);
+	transition: 0.2s;
 	cursor: pointer;
 }
 
 .login {
-	position: relative;
-	left: 67rem;
-	font-weight: bold;
-	color: #13005a;
-	font-family: "Times New Roman", Times, serif;
+	font-weight: normal;
+	color: #002e5b;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 	cursor: pointer;
+	padding-left: 64rem;
+	font-size: smaller;
 }
+
+.login:hover {
+	color: #82cd11;
+	transition: 0.3s;
+}
+
+.register:hover {
+	color: #82cd12;
+	transition: 0.3s;
+}
+
+.register {
+	font-weight: normal;
+	color: #002e5b;
+	font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+	cursor: pointer;
+	padding-left: 67.3rem;
+	position: relative;
+	bottom: 1rem;
+	font-size: smaller;
+}
+/* 
+.body-img-slider {
+	border-radius: 10px;
+}
+
+.slides {
+	max-width: max-content;
+	width: 500%;
+	display: flex;
+}
+
+.slides input {
+	display: none;
+}
+
+.slide {
+	width: 20%;
+	transition: 2s;
+}
+
+.slide img {
+	width: 800px;
+	height: 500px;
+}
+
+.navigation-mannual {
+	position: absolute;
+	width: 950px;
+	margin-top: -70px;
+	margin-left: 10rem;
+	display: flex;
+	justify-content: center;
+}
+
+.mannual-btn {
+	border: 2px solid #ffffff;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+	transition: 0.6s;
+}
+
+.mannual-btn:not(last-child) {
+	margin-right: 40px;
+}
+
+.mannual-btn:hover {
+	background-color: #67b51a;
+}
+
+#radio1:checked ~ .first {
+	margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+	margin-right: -20%;
+}
+
+#radio3:checked ~ .first {
+	margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+	margin-left: -60%;
+}
+
+.navigation-auto {
+	position: absolute;
+	display: flex;
+	width: 800px;
+	justify-content: center;
+	margin-top: 460px;
+}
+
+.navigation-auto div {
+	border: 2px solid #333;
+	padding: 5px;
+	border-radius: 10px;
+	transition: 1s;
+} */
 
 .Nengi {
 	display: flex;
-	height: 23rem;
+	height: 21rem;
 	justify-content: space-around;
+	box-shadow: 0 0 60rem #01070cd4;
 }
 
 .Nengi-1 {
-	border-radius: 1.5rem;
+	border-radius: 1rem;
 }
 
 .mens-suit {
 	display: flex;
 	justify-content: space-between;
 	padding: 2rem;
-	height: 38rem;
+	height: 30rem;
+	border-radius: 9rem;
+}
+
+.four-Logos {
+	display: flex;
+	color: #fff;
+	justify-content: space-between;
+	background-color: #002e5b;
+	padding: 1rem;
+	height: 6rem;
+	gap: 9rem;
+}
+
+.truck {
+	display: flex;
+	text-decoration: none;
+	text-transform: inherit;
+}
+
+.bs-words1 {
+	display: block;
+	padding-left: 1rem;
+}
+
+.small-words {
+	color: rgb(189, 188, 188);
+	font-size: 12px;
+	font-family: serif;
+}
+
+.big-words {
+	color: #a1d407;
+	font-size: 1rem;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.fonts {
+	color: #a1d407;
+	border: 2px #a1d407 solid;
+	height: 3.5rem;
+	width: 5rem;
+	border-radius: 50%;
+	font-size: 1.2rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.small-words:hover {
+	color: #fff;
+	transition: 0.3s;
+}
+
+.fonts:hover {
+	color: #ffffff;
+	background: #a1d407;
+	transition: 0.3s;
+}
+
+.designer-products {
+	display: flex;
+	justify-content: space-around;
+	background: #e2e1e1;
+	height: 7rem;
+	padding-top: 1rem;
+}
+
+.designers {
+	color: #8d8c8c;
+	cursor: pointer;
+}
+
+.designer {
+	color: #504f4f;
+	border: 2px #93c108 solid;
+	height: 1.9rem;
+	width: 9rem;
+	border-radius: 3rem;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 1rem;
+	cursor: pointer;
+}
+
+.designers:hover {
+	color: #504f4f;
+}
+
+.black-background {
+	background-image: url("project-assets/dot-background.jpeg");
+	height: 25rem;
+	padding: 2rem;
+	padding-top: 3rem;
+	padding-bottom: 5rem;
+}
+
+.all-our,
+.pure-fabric {
+	color: #ffffff;
+	font-size: 3.5rem;
+}
+
+.hundred {
+	color: #2383e3;
+	font-size: 5rem;
+}
+
+.shop-now {
+	background: burlywood;
+	border-radius: 2rem;
+	color: #ffffff;
+	font-weight: bold;
+	border: 1rem burlywood solid;
+	width: 12rem;
 }
